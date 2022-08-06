@@ -28,8 +28,6 @@ function test(e) {
         'means_of_information': meansOfInfo
       }
   
-      console.log('DATA =>',data)
-  
       $.ajax({
         type: "POST",
         headers: {
@@ -48,14 +46,10 @@ function test(e) {
         for(const item of radioArray) {
           if(item.checked) item.checked = false
         }
-        console.log('Response Data: ', response)
         if(response.data) {
           alert('Form submitted successfully')
         }
       }).fail(function (jqXHR, textStatus, errorThrown) {
-        console.log('A =>', jqXHR)
-        console.log('B =>', textStatus)
-        console.log('C =>', errorThrown)
         document.getElementById('email').value = null
         document.getElementById('full_name').value = null
         document.getElementById('phone').value = null
