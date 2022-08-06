@@ -1,6 +1,6 @@
 // Handle Form data
 function test(e) {
-  const uri = "http://127.0.0.1:3334/lbc/2022"
+  const uri = "https://still-savannah-43128.herokuapp.com/lbc/2022"
     let email = document.getElementById('email').value
     let fullName = document.getElementById('full_name').value
     let phoneNumber = document.getElementById('phone').value
