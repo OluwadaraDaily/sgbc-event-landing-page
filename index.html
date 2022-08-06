@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="./index.css">
+    <title>Lagos Bible Conference 2022</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="icon">
+        <a href="index.html">
+          <p class="title">LBC</p>
+        </a>
+      </div>
+      <div>
+        <ul class="links">
+          <li class="link-item"><a href="#">About</a></li>
+          <li class="link-item"><a href="#">Speakers</a></li>
+          <li class="link-item"><a href="#">Testimonials</a></li>
+          <li class="link-item"><a href="form.html" class="register-btn">REGISTER <span class="material-icons forward-arrow">arrow_forward_ios</span></a></li>
+        </ul>
+        <div class="hamburger-div">
+          <div class="hamburger-icon"></div>
+        </div>
+      </div>
+
+    </header>
+    <!-- Main Image -->
+    <div class="main-img"></div>
+
+    <!-- Main Section -->
+    <section class="main-section">
+      <div class="main-sub-section">
+        <div class="empty-div"></div>
+        <div class="main-div">
+          <div class="left">
+            <p class="title">Lagos Bible <br> Conference 2022</p>
+            <p class="sub-title">
+              <span style="font-weight: 600">Strangers & Pilgrims: Separated and Engaged </span> <br>
+              The subtitle of John Bunyan's classic work <em>The Pilgrim's Progress</em> is:
+              "from this world to that which is to come." This phrase describes the Christian as belonging
+              to two 'worlds' and journeying from one to the other.
+            </p>
+            <button class="register-btn" @click="">REGISTER <span class="material-icons forward-arrow">arrow_forward_ios</span></button>
+          </div>
+          <div class="right">
+            <div class="date">
+              <p class="main-date title">
+                4 - 5
+              </p>
+                <p class="sub-date title">
+                 NOV 2022
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="last-main-div">
+          <div class="inner-last-main-div">
+            <div class="timer-div" id="timer">
+              <div class="timer-box">
+                <p class="timer-box-title" id="days">--</p>
+                <p class="timer-box-text">Days</p>
+              </div>
+              <div class="timer-box">
+                <p class="timer-box-title" id="hours">--</p>
+                <p class="timer-box-text">Hours</p>
+              </div>
+              <div class="timer-box">
+                <p class="timer-box-title" id="minutes">--</p>
+                <p class="timer-box-text">Minutes</p>
+              </div>
+              <div class="timer-box">
+                <p class="timer-box-title" id="seconds">--</p>
+                <p class="timer-box-text">Seconds</p>
+              </div>
+            </div>
+            <div>
+              <p class="title" id="conference-begins"></p>
+            </div>
+            <div class="expand-more-div">
+              <a href="#about">
+                <span class="material-icons expand-more" style="font-size: 50px;">
+                  expand_more
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="main-inner-about-section">
+        <div class="section-header">
+          <p class="title">About the LBC</p>
+        </div>
+        <div class="main-about-div">
+          <div class="logo">
+            <img src="https://sgbc.ams3.digitaloceanspaces.com/Static/LBC2022/lbc2022-main.jpeg" alt="" srcset="">
+          </div>
+          <div class="detail-1">
+            <p class="title">Lagos Bible Conference is a yearly conference</p>
+            <p class="sub-title">
+              <span style="font-weight: 600">Strangers & Pilgrims: Separated and Engaged </span> <br>
+                The subtitle of John Bunyan's classic work <em>The Pilgrim's Progress</em> is:
+                "from this world to that which is to come." This phrase describes the Christian as belonging
+                to two 'worlds' and journeying from one to the other.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

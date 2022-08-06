@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="./form.css">
+    <title>Lagos Bible Conference 2022</title>
+  </head>
+  <body>
+    <div class="back-arrow">
+      <a href="index.html">
+        <span class="material-icons">
+          arrow_back
+        </span>
+      </a>
+    </div>
+
+    <!-- Form Section -->
+    <section class="form-section">
+      <div class="empty-div"></div>
+      <div class="form-div">
+        <form method="POST" onsubmit="return false;">
+          <div>
+            <label for="email">Email Address</label> <br>
+            <span>
+              <input type="email" name="email" id="email" required>
+            </span>
+          </div>
+          <div>
+            <label for="full_name">Full Name</label> <br>
+            <input type="text" name="full_name" id="full_name" required>
+          </div>
+          <div>
+            <label for="phone">Phone Number</label> <br>
+            <input type="tel" name="phone_number" id="phone" required>
+          </div>
+          <div>
+            <p class="">How did you know about the program?</p>
+            <div>
+              <input type="radio" name="means_of_information" value="Radio" class="radios">
+              <label for="">Radio</label>
+            </div>
+            <div>
+              <input type="radio" name="means_of_information" value="Flyer" class="radios">
+              <label for="">Flyer</label>
+            </div>
+            <div>
+              <input type="radio" name="means_of_information" value="Social Media" class="radios">
+              <label for="">Social Media</label>
+            </div>
+            <div>
+              <input type="radio" name="means_of_information" value="Friend" class="radios">
+              <label for="">Friend</label>
+            </div>
+            <div>
+              <label for="">Other</label> <br>
+              <input type="text" name="other_means_of_information" id="other">
+            </div>
+          </div>
+          <div>
+            <label for="">What location will you be coming from?</label> <br>
+            <input type="text" name="location_from" id="location_from" required>
+          </div>
+          <div class="btn-div">
+            <input type="submit" value="Submit" onclick="test()">
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
