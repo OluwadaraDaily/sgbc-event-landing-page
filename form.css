@@ -177,9 +177,22 @@ input[type="submit"]:hover {
     display: none;
   }
 
+  .back-arrow a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .back-arrow a span {
+    font-size: 20px;
+    margin: 0;
+    margin-right: 10px;
+  }
+
   .form-section {
     width: 100%;
     height: auto;
+    margin-top: 60px;
   }
 
   .form-div {

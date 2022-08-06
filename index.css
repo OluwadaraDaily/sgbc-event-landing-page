@@ -388,6 +388,10 @@ span.forward-arrow {
     margin: 15px auto;
   }
 
+  .left a {
+    align-self: center;
+  }
+
   .main-div {
     justify-content: flex-start;
   }
