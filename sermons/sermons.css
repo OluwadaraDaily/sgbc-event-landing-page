@@ -37,10 +37,17 @@ a {
   margin: 20px 0;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 /* Header and Nav Styling */
 
 .header {
-  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,148 +114,81 @@ button.register-btn {
   display: none;
 }
 
-/* Main Section Styling */
-
-.main-img {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: url('https://sgbc.ams3.digitaloceanspaces.com/Static/LBC2022/lbc2022-main.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-  filter: brightness(.4);
-  z-index: -2;
+/* Main Section */
+.main {
+  padding: 0 10px;
 }
 
-.main-section {
-  z-index: 1;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.main-sub-section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.empty-div {
-  flex: 1;
-}
-
-.main-div {
+/* Toggle Bar Styling */
+.toggle-bar {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  flex: 1.5;
-  /* margin-top: 15%; */
-}
-
-.left, .right {
-  display: flex;
-  flex-direction: column;
-  flex: 1
-}
-
-.right {
-  text-align: center;
-  justify-content: center;
-}
-
-.date {
-  align-self: center;
-}
-
-.last-main-div {
-  flex: 1;
-  display: none;
   align-items: center;
+  border: 1px solid #555;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 15px;
 }
 
-.inner-last-main-div {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.timer-div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.timer-box {
-  border: 1px solid white;
-  height: 80px;
-  width: 80px;
-  border-radius: 4px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 5px 10px 5px;
-  margin: 0 50px;
-}
-
-.timer-box-title {
-  font-size: 45px;
+.toggle-bar > .toggle-title {
+  font-size: 20px;
   font-weight: 700;
 }
 
-span.expand-more {
-  transition: transform 500ms;
-  will-change: transform;
+.toggle-bar > .icons > .icon {
+  font-size: 35px !important;
 }
 
-span.expand-more:hover {
-  transform: translateY(-10px);
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  border-radius: 8px;
+  background-color: #1b1b1c;
+  color: white;
+  padding: 10px;
+  margin: 15px 0;
 }
 
-span.forward-arrow {
-  font-size: 15px;
+.card-title {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 5px;
 }
 
-/* About Section Styling */
-.about-section {
-  margin: 50px 0;
-  display: none;
+.card-sub-title {
+  font-size: 12px;
+  line-height: 16px;
+  color: grey;
 }
 
-.section-header {
-  text-align: center;
-  margin-bottom: 20px;
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
-.main-inner-about-section {
-  width: 80%;
-  margin: 0 auto;
+.card-bottom > .date,  .card-bottom > .download-btn {
+  font-size: 10px;
+  background-color: #2e2e30;
+  border-radius: 5px;
+  padding: 6px;
 }
 
-.main-about-div {
+.card-bottom > .download-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.logo {
-  flex: 1;
+.card-bottom > .download-btn:hover {
+  background-color: #424247;
 }
 
-.logo > img {
-  width: 800px;
-}
+/* End of Card Styling */
 
-.detail-1 {
-  flex: 3;
-  margin-left: 50px;
-}
 
 /* Phone Screen Responsive Styling */
 @media screen and (max-width: 480px) {
@@ -319,20 +259,7 @@ span.forward-arrow {
 
 
   /* Non Generic Styles */
-  
-  .main-section {
-    width: 100%;
-  }
-  .main-sub-section {
-    display: block;
-    margin-top: 22%;
-  }
-
-  .main-div {
-    flex-direction: column;
-  }
   .header {
-    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
@@ -372,86 +299,17 @@ span.forward-arrow {
     display: flex;
     flex-direction: column;
   }
-
-  .empty-div {
-    display: none;
-  }
-
-  .left, .right {
-    flex: none;
-  }
-
-  .left >.sub-title {
-    width: 90%;
-    margin: 15px auto;
-  }
-
-  .left a {
-    align-self: center;
-  }
-
-  .main-div {
-    justify-content: flex-start;
-  }
-
-  .main-div .left {
-    text-align: center;
-  }
-
-  .main-div > .right {
-    margin: 20px 0;
-  }
-
-  .main-div .register-btn {
-    margin: 15px auto;
-  }
-
-  .inner-last-main-div {
-    justify-content: space-between;
-  }
-
-  .timer-div, .timer-box {
-    margin: 0;
-  }
-
-  .expand-more-div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .expand-more-div > a > span {
-    z-index: inherit;
-  }
-
-
-  /* About Section */
-
-  .about-section {
-    display: none;
-  }
-
-  .main-inner-about-section {
-    width: 100%;
-  }
-
-  .main-about-div {
-    flex-direction: column;
-  }
-
-  .logo > img {
-    width: 100%;
-  }
-
-  .detail-1 {
-    margin: 0;
-    text-align: center;
-  }
-
-  .detail-1 > .sub-title {
-    width: 90%;
-    margin: 15px auto;
-  }
 }
 
-
+/* Google Icons CSS */
+.download-icon {
+  font-size: 15px;
+  margin-right: 3px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
